@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SYNEXIA - Virtual Assistant</title>
+    <link rel="shortcut icon" href="IMAGES/favicon.ico" type="image/x-icon">
+    <!-- Include Tailwind CSS via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100">
+    <div class="main max-w-lg mx-auto p-6 bg-white rounded-lg shadow-lg" role="main" class="container">
+        <div class="image-container" aria-label="SYNEXIA Virtual Assistant">
+            <div class="image mb-4">
+                <img src="IMAGES/ro.jpeg" alt="NEXABOT" class="w-full h-auto rounded-lg shadow-md" loading="eager">
+                <label for="voice-select" class="block mt-4 text-sm font-medium text-gray-700">Choose Voice:</label>
+                <select id="voice-select" class="voice-select mt-2 block w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500" aria-label="Select voice">
+                    <option value="" disabled selected>Select a voice</option>
+                    <!-- Add voice options here -->
+                </select>
+            </div>
+        </div>
+        <h1 class="text-3xl font-bold text-center mb-2 text-gray-800">Welcome to SYNEXIA</h1>
+        <p class="text-center text-gray-600 mb-4">Your virtual assistant at your service</p>
+        <div class="chat-area bg-gray-50 p-4 border border-gray-300 rounded-md" aria-live="polite">
+            <div class="content" role="log" aria-label="Chat area">
+                <!-- Chat messages will appear here -->
+            </div>
+        </div>
+        <button class="talk mt-6 w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 rounded transition duration-300 ease-in-out" aria-label="Start talking to SYNEXIA">
+            <span class="font-bold">Talk to SYNEXIA</span>
+        </button>
+    </div>
+    <script src="js/script.js" defer></script> <!-- Added defer to load script after HTML -->
+</body>
+
+</html>
